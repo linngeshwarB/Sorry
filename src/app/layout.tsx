@@ -15,8 +15,32 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Happy Birthday Shreya! 🎉",
   description: "A special apology website with love, laughter, and birthday wishes for the amazing Shreya!",
+  keywords: ["birthday", "apology", "celebration", "friendship", "Shreya"],
+  authors: [{ name: "Your Friend" }],
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-emoji.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/favicon.svg',
+  },
+  openGraph: {
+    title: "Happy Birthday Shreya! 🎉",
+    description: "A special apology website with love, laughter, and birthday wishes!",
+    type: "website",
+    images: [
+      {
+        url: '/favicon.svg',
+        width: 64,
+        height: 64,
+        alt: 'Birthday Cake',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: "Happy Birthday Shreya! 🎉",
+    description: "A special apology website with love, laughter, and birthday wishes!",
   },
 };
 
